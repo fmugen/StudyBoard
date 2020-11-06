@@ -1,0 +1,2 @@
+com/study/board/DemoApplicationTests.java
+ com.study.board.DemoApplicationTests

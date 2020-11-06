@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.study.board.DemoApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.study.board.DemoApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.study.board.html">com.study.board</a> &gt; DemoApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.396s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.396s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:23:29.090 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:23:29.106 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:23:29.133 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.study.board.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:23:29.151 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.study.board.DemoApplicationTests], using SpringBootContextLoader
+19:23:29.156 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.study.board.DemoApplicationTests]: class path resource [com/study/board/DemoApplicationTests-context.xml] does not exist
+19:23:29.157 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.study.board.DemoApplicationTests]: class path resource [com/study/board/DemoApplicationTestsContext.groovy] does not exist
+19:23:29.158 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.study.board.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:23:29.159 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.study.board.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:23:29.206 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.study.board.DemoApplicationTests]
+19:23:29.259 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/ohs46/workspace/studyProject/demo/build/classes/java/main/com/study/board/Application.class]
+19:23:29.260 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.study.board.Application for test class com.study.board.DemoApplicationTests
+19:23:29.337 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.study.board.DemoApplicationTests]: using defaults.
+19:23:29.338 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:23:29.358 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5f85fae8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78b05695, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@758f29b6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@563bea25, org.springframework.test.context.support.DirtiesContextTestExecutionListener@269918b0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c67e608, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50a9a6ab, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@59ca1459, org.springframework.test.context.event.EventPublishingTestExecutionListener@3778cb48, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@54cc3c09, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@49cd44c5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@402cf979, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31ff48bf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@46616fd, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@27ae81d8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ee4365]
+19:23:29.361 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1aa4de3d testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6f96a0bb testClass = DemoApplicationTests, locations = '{}', classes = '{class com.study.board.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5fc676e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7683a705, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@59b73e5d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@76047c10, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@785e0a6c], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+19:23:29.383 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.5.RELEASE)
+
+2020-11-03 19:23:29.668  INFO 36085 --- [    Test worker] com.study.board.DemoApplicationTests     : Starting DemoApplicationTests on COAMAC20000957 with PID 36085 (started by ohs46 in /Users/ohs46/workspace/studyProject/demo)
+2020-11-03 19:23:29.671  INFO 36085 --- [    Test worker] com.study.board.DemoApplicationTests     : No active profile set, falling back to default profiles: default
+2020-11-03 19:23:30.387  WARN 36085 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'authMapper' and 'com.study.board.mybatis.mapper.AuthMapper' mapperInterface. Bean already defined with the same name!
+2020-11-03 19:23:30.387  WARN 36085 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'authMapperCustom' and 'com.study.board.mybatis.mapper.AuthMapperCustom' mapperInterface. Bean already defined with the same name!
+2020-11-03 19:23:30.388  WARN 36085 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.study.board]' package. Please check your configuration.
+2020-11-03 19:23:31.184  INFO 36085 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9ccf90d3-04ad-474f-8820-9d2f20da9cf2
+
+2020-11-03 19:23:31.508  INFO 36085 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b181676, org.springframework.security.web.context.SecurityContextPersistenceFilter@703ad17c, org.springframework.security.web.header.HeaderWriterFilter@6252d29b, org.springframework.web.filter.CorsFilter@f3fb545, org.springframework.security.web.authentication.logout.LogoutFilter@1bc50fbf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41b03230, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2935c29d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@798a9315, org.springframework.security.web.session.SessionManagementFilter@6692ddc3, org.springframework.security.web.access.ExceptionTranslationFilter@64fa30c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6694d092]
+2020-11-03 19:23:31.654  INFO 36085 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-03 19:23:31.837  INFO 36085 --- [    Test worker] com.study.board.DemoApplicationTests     : Started DemoApplicationTests in 2.443 seconds (JVM running for 3.461)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 2020/11/03 19:23:32</p>
+</div>
+</div>
+</body>
+</html>

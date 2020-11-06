@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+//データベース名：fuga
+//ユーザーID：hoge
+//パスワード：passpass
+//プロジェクト名：test_mybatis
+//schema="fuga"
+-->
+
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- https://dev.mysql.com/downloads/connector/j/ ダウンロード必要-->
+    <classPathEntry location="./mysql-connector-java-5.1.49/mysql-connector-java-5.1.49-bin.jar"/>
+    <!-- データベースの接続設定 -->
+    <!-- MySQL データベース名：fuga ユーザーID：hoge パスワード：passpassの場合 -->
+    <context id="MySQLTables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/test?serverTimezone=JST"
+                        userId="test"
+                        password="test">
+        </jdbcConnection>
+
+        <!-- プロジェクト名：test_mybatisの場合 -->
+        <!-- SELECT 結果等を格納するドメインモデルを生成する設定 -->
+        <javaModelGenerator targetPackage="com.study.board.entity" targetProject="../java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- プロジェクト名：test_mybatisの場合 -->
+        <!-- SQL 設定が記述された XML を生成する設定 -->
+        <sqlMapGenerator targetPackage="mapper"  targetProject="./">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- マッパークラスを生成する設定
+        XMLMAPPER：MapperインターフェースクラスとMapperファイルのみ生成
+        MIXEDMAPPER：アノテーションを定義したMapperインターフェースクラスとMapperファイルを生成
+        -->
+        <!-- プロジェクト名：test_mybatisの場合 -->
+        <javaClientGenerator type="MIXEDMAPPER" targetPackage="com.study.board.mybatis.mapper"  targetProject="../java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- コードを生成するテーブルを指定 「%」でワイルドカード -->
+        <!-- <table schema="fuga" tableName="%" > -->
+        <!-- テーブル名を個別に設定する場合（スキーマ名：fuga） -->
+        <table schema="test" tableName="%"></table>
+    </context>
+</generatorConfiguration>
+
+
+<!--
+    https://learning-collection.com/mybatis-generator%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%A8%E5%AE%9F%E8%A1%8C/
+    https://mybatis.org/generator/quickstart.html
+    https://youtu.be/bykIDsCtYhE
+    https://youtu.be/Nnb5rta5MSc
+    https://learning-collection.com/mybatis-generator%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%E3%81%A8%E5%AE%9F%E8%A1%8C/
+    java -jar mybatis-generator-core-1.4.0.jar -configfile mybatis-generator.xml -overwrite
+-->

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8
+    username: test
+    password: test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8081
+
+#mybatis:
+ # type-aliases-package: com.study.board.mybatis.mapper
+  #mapper-locations: classpath*:/com/study/board/mybatis/mapper/*.xml
